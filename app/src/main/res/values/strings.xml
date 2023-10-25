@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TimeWise</string>
+    <string name="Nome">Nome/Cod</string>
+    <string name="Senha">Senha</string>
+    <string name="string_tela2">Marcações realizadas</string>
+    <string name="text_tela2">ultimo registro</string>
+    <string name="ajuste_ponto">Ajuste de ponto</string>
+    <string name="baterPonto">Bater ponto</string>
+    <string name="ajusteDePonto">Ajuste de Ponto</string>
+
+</resources>

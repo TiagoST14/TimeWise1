@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="247dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/loog" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/Nome"
+        app:layout_constraintBottom_toTopOf="@+id/txtSenha"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/Senha"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="255dp"
+        android:backgroundTint="@color/cor_botao"
+        android:onClick="onClick"
+        android:text="Entrar"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/cor_botao"
+        android:text="Administrador"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="172dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="Esqueci a senha"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSenha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:srcCompat="@drawable/ic_acessibilidade_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
