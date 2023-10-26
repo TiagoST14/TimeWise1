@@ -8,6 +8,22 @@
     tools:context=".MainActivity2">
 
 
+    <TextView
+        android:id="@+id/textViewRelogio"
+        android:layout_width="216dp"
+        android:layout_height="58dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="220dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="413dp"
@@ -74,11 +90,12 @@
         app:layout_constraintGuide_percent="0.0" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/botao_sair"
         android:layout_width="38dp"
         android:layout_height="31dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
+        android:onClick="botaoSair"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:srcCompat="@drawable/ic_output_24dp" />
@@ -116,19 +133,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
-    <TextView
-        android:id="@+id/texViewHorario"
-        android:layout_width="163dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="88dp"
-        android:text="HORA"
-        android:textAlignment="center"
-        android:textColor="@color/cor_letra_botao"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="262dp"
@@ -164,24 +168,25 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="148dp"
-        android:layout_height="22dp"
+        android:layout_width="126dp"
+        android:layout_height="23dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
-        android:text=""
         android:textAlignment="textStart"
-        android:textSize="17sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Ultimo registro"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:text="@string/text_tela2" />
+        tools:text="@string/text_ult_ponto" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/horaUltPonto"
         android:layout_width="115dp"
         android:layout_height="27dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:text="Hora_ult.Ponto"
+        android:text=""
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -201,11 +206,12 @@
         app:layout_constraintGuide_percent="0.76" />
 
     <Button
-        android:id="@+id/baterPonto"
+        android:id="@+id/buttonBaterPonto"
         android:layout_width="229dp"
         android:layout_height="55dp"
         android:layout_marginTop="168dp"
         android:backgroundTint="@color/cor_botao"
+        android:onClick="baterPonto"
         android:text="@string/baterPonto"
         android:textAlignment="center"
         android:textSize="@dimen/baterPontoTam"
@@ -224,5 +230,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/ajusteDePonto" />
+        tools:text="@string/ajusteDePonto"
+        android:text="Ajuste de ponto"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
      }
     private void validarLogin(){
-        Dados user1 = new Dados("t","t1"); //DEFINICAO DOS VALORES
+        Dados user1 = new Dados("tiago","tiago"); //DEFINICAO DOS VALORES
 
         String username = txtNome.getText().toString();
         String password = txtSenha.getText().toString();
