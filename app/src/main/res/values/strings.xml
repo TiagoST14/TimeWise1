@@ -7,5 +7,7 @@
     <string name="ajuste_ponto">Ajuste de ponto</string>
     <string name="baterPonto">Bater ponto</string>
     <string name="ajusteDePonto">Ajuste de Ponto</string>
+    <string name="textcod">Insira o código</string>
+    <string name="textcod2">Insira o código enviado para o seu email ou celular.</string>
 
 </resources>

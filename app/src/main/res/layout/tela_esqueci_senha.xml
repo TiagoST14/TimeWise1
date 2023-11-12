@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_recuperar_senha"
+    tools:context=".EsqueciSenha">
+
+    <Button
+        android:id="@+id/buttonEnviarCod"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/cor_botao"
+        android:text="Enviar"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="298dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="304dp"
+        android:ems="10"
+        android:hint="Email, Telefone ou Úsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="241dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/textcod"
+        android:textAlignment="center"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="224dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/textcod2"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/cor_letra_botao"
+        android:textSize="16sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="95dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_lock_reset_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

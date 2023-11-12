@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">TimeWise</string>
+    <string name="Nome">Nome/Cod</string>
+    <string name="Senha">Senha</string>
     <string name="string_tela2">Marcações realizadas</string>
+    <string name="text_ult_ponto">ultimo registro</string>
     <string name="ajuste_ponto">Ajuste de ponto</string>
     <string name="baterPonto">Bater ponto</string>
     <string name="ajusteDePonto">Ajuste de Ponto</string>
+    <string name="textcod">Insira o código</string>
+    <string name="textcod2">Insira o código enviado para o seu email ou celular.</string>
+
 </resources>
