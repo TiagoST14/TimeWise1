@@ -8,6 +8,11 @@
     <color name="cor_botao">#BCBABA</color>
     <color name="cor_letra_botao" >#171717</color>
     <color name="cor_botao_ajuste_ponto">#999797</color>
-
+    ///////////////////////////////////////////////////
+    <color name="cor_background_blue">#034f84</color>
+    <color name="cor_paleta_alternativa">#92a8d1</color>
+    <color name="cor_paleta_alternativa_ros">#f7cac9</color>
+    <color name="cor_paleta_alternativa_laran">#f7786b</color>
+    <color name="cor_botao_teste">#FFFFFF</color>
 
 </resources>
