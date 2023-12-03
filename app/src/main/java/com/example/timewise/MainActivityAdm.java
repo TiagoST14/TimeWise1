@@ -20,7 +20,7 @@ public class MainActivityAdm extends AppCompatActivity {
 
     }
     public void entrarAdm(View view){
-        Intent intent = new Intent(getApplicationContext(), TelaCadastrarFuncionario.class);
+        Intent intent = new Intent(getApplicationContext(),MenuAdm.class);
         startActivity(intent);
     }
 }

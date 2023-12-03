@@ -10,5 +10,8 @@
     <string name="textcod">Insira o código</string>
     <string name="textcod2">Insira o código enviado para o seu email ou celular.</string>
     <string name="cadastrofunc">Cadastrar Novo Funcionario</string>
+    <string name="menuFunc">Controle de funcionários</string>
+    <string name="Colaboradores">Colaboradores</string>
+    <string name="func1">Lorenzo Enzo</string>
 
 </resources>

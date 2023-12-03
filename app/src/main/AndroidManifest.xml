@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TimeWise"
         tools:targetApi="31">
         <activity
+            android:name=".MenuAdm"
+            android:exported="false" />
+        <activity
             android:name=".TelaCadastrarFuncionario"
             android:exported="false" />
         <activity
