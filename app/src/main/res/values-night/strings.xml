@@ -9,5 +9,6 @@
     <string name="ajusteDePonto">Ajuste de Ponto</string>
     <string name="textcod">Insira o código</string>
     <string name="textcod2">Insira o código enviado para o seu email ou celular.</string>
+    <string name="cadastrofunc">Cadastrar Novo Funcionario</string>
 
 </resources>

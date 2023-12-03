@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity2">
+    android:background="@drawable/background_teste"
+    tools:context=".TelaPrincipal">
 
 
     <TextView
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/retanglemenu" />
+        app:srcCompat="@color/cor_menu" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -148,7 +148,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@mipmap/retanglemarcacoes_tela2" />
+        app:srcCompat="@color/cor_botao_teste" />
 
     <TextView
         android:id="@+id/textView6"
@@ -156,6 +156,7 @@
         android:layout_height="22dp"
         android:layout_marginTop="8dp"
         android:text="@string/string_tela2"
+        android:textColor="@color/cor_letra_botao"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,6 +181,7 @@
         android:layout_marginTop="20dp"
         android:text="Ultimo registro"
         android:textAlignment="textStart"
+        android:textColor="@color/cor_letra_botao"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
@@ -193,6 +195,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="@string/text_ult_ponto"
+        android:textColor="@color/cor_letra_botao"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -216,10 +219,11 @@
         android:layout_width="229dp"
         android:layout_height="55dp"
         android:layout_marginTop="168dp"
-        android:backgroundTint="@color/cor_botao"
+        android:backgroundTint="@color/cor_botao_teste"
         android:onClick="baterPonto"
         android:text="@string/baterPonto"
         android:textAlignment="center"
+        android:textColor="@color/cor_letra_botao"
         android:textSize="@dimen/baterPontoTam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -230,13 +234,14 @@
         android:layout_width="171dp"
         android:layout_height="48dp"
         android:layout_marginTop="144dp"
-        android:backgroundTint="@color/cor_botao_ajuste_ponto"
+        android:backgroundTint="@color/cor_botao_teste"
+        android:text="Ajuste de ponto"
+        android:textColor="@color/cor_letra_botao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/ajusteDePonto"
-        android:text="Ajuste de ponto"/>
+        tools:text="@string/ajusteDePonto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

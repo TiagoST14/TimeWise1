@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgrund_teste02"
-    tools:context=".MainActivity">
+    android:background="@drawable/background_teste"
+    tools:context=".TelaLogin">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -27,7 +27,7 @@
         android:layout_marginBottom="14dp"
         android:ems="10"
         android:hint="Nome"
-        android:inputType="text"
+        android:inputType="text|textAutoCorrect|textCapWords"
         app:layout_constraintBottom_toTopOf="@+id/txtSenha"
         app:layout_constraintStart_toStartOf="@+id/imageView4" />
 
@@ -48,7 +48,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="255dp"
         android:backgroundTint="@color/cor_botao_teste"
-        android:onClick="onClick"
+        android:onClick="entrarAdm"
         android:text="Entrar"
         android:textColor="@color/cor_letra_botao"
         android:textSize="15sp"
@@ -75,7 +75,7 @@
     <TextView
         android:id="@+id/textViewEsqueciSenha"
         android:layout_width="172dp"
-        android:layout_height="23dp"
+        android:layout_height="48dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"
         android:onClick="esqueciSenha"
@@ -110,7 +110,9 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="214dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

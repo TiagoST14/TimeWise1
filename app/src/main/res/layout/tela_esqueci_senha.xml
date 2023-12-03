@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_recuperar_senha"
+    android:background="@drawable/background_teste"
     tools:context=".EsqueciSenha">
 
     <Button
         android:id="@+id/buttonEnviarCod"
         android:layout_width="220dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/cor_botao"
+        android:backgroundTint="@color/cor_botao_teste"
         android:text="Enviar"
         android:textColor="@color/cor_letra_botao"
         android:textSize="15sp"
@@ -75,4 +75,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_lock_reset_24" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@drawable/baseline_arrow_back_24"
+        android:onClick="voltarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

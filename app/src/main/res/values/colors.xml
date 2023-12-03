@@ -14,5 +14,6 @@
     <color name="cor_paleta_alternativa_ros">#f7cac9</color>
     <color name="cor_paleta_alternativa_laran">#f7786b</color>
     <color name="cor_botao_teste">#FFFFFF</color>
+    <color name="cor_menu">#BC357BAB</color>
 
 </resources>

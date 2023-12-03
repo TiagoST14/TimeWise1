@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class TelaPrincipal extends AppCompatActivity {
     private TextView textViewRelogio;
     private Handler handler;// Handler é para atualizar o horario
     private Button buttonBaterPonto;
@@ -80,7 +80,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
     //BOTAO CRIADO PARA SAIDA PARA A TELA PRINCIPAL
     public void botaoSair(View view) {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), TelaLogin.class);
         startActivity(intent);
     }
 

@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class TelaLogin extends AppCompatActivity {
 
     private EditText txtNome;
     private EditText txtSenha;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         String password = txtSenha.getText().toString();
 
         if(username.equals(user1.nome) && password.equals(user1.getSenha())){
-            Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+            Intent intent = new Intent(getApplicationContext(), TelaPrincipal.class);
             startActivity(intent); //VALIDACAO PARA SEGUNDA TELA
         }else{
 

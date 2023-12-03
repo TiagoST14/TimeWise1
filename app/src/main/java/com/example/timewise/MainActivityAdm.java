@@ -1,6 +1,5 @@
 package com.example.timewise;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,9 +14,13 @@ public class MainActivityAdm extends AppCompatActivity {
         setContentView(R.layout.tela_adm);
     }
     public void abrirUser(View v){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), TelaLogin.class);
         startActivity(intent);
 
 
+    }
+    public void entrarAdm(View view){
+        Intent intent = new Intent(getApplicationContext(), TelaCadastrarFuncionario.class);
+        startActivity(intent);
     }
 }
