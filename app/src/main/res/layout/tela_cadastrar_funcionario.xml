@@ -54,16 +54,30 @@
         android:layout_width="371dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="text"
-        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="371dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="text|textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
         android:id="@+id/editTextEscala"
@@ -134,17 +148,18 @@
         android:layout_width="371dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="232dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="Data de nascimento"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextCpf"
         android:layout_width="186dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -166,7 +181,6 @@
         android:hint="RG"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
         app:layout_constraintTop_toBottomOf="@+id/editTextDataNasc" />
 
     <EditText
@@ -182,24 +196,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCpf" />
 
     <EditText
         android:id="@+id/editTextPis"
         android:layout_width="186dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="PIS"
         android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTelefone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <EditText
         android:id="@+id/editTextTelefone"
-        android:layout_width="189dp"
-        android:layout_height="wrap_content"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
@@ -211,11 +226,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonCadastrar"
         android:layout_width="127dp"
         android:layout_height="48dp"
         android:layout_marginTop="50dp"
-        android:backgroundTint="@color/cor_botao"
+        android:backgroundTint="@color/cor_botao_teste"
         android:text="Cadastrar"
         android:textColor="@color/cor_letra_botao"
         android:textSize="16sp"
@@ -236,5 +251,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
